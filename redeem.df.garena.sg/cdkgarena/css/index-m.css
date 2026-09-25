@@ -1,0 +1,728 @@
+/* reset S */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul,
+li {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    font-size: calc(100vw / 750 * 100);
+}
+
+img {
+    border: 0;
+    -webkit-touch-callout: none;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    background: #191219;
+}
+
+/* reset E */
+
+@media (min-width:5.68rem) and (orientation:landscape) {
+    html {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0
+    }
+    html:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #333;
+        z-index: 9999999
+    }
+    body:after {
+        content: "";
+        position: absolute;
+        z-index: 9999999;
+        height: 200px;
+        width: 100px;
+        left: 50%;
+        top: 50%;
+        margin: -100px 0 0 -50px;
+        color: #fff;
+        transform: rotate(-90deg);
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB2CAYAAAAZUrcsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDAwMjcwNkVEQzczMTFFNjlFMDFGQTEzNkM3N0JBMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDAwMjcwNkREQzczMTFFNjlFMDFGQTEzNkM3N0JBMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0NzhCMTlBREM1ODExRTZCNTdFRjQ0Q0I1QzRCODZBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQ0NzhCMTlCREM1ODExRTZCNTdFRjQ0Q0I1QzRCODZBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+J30rNQAACRRJREFUeNrsXQlsFVUU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);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100px auto
+    }
+}
+
+.spr {
+    background-image: url(../ossweb-img/m/spr.png);
+    background-repeat: no-repeat;
+    background-size: 15.96rem 0.74rem;
+}
+
+.spr.btn-close-i {
+    width: 0.58rem;
+    height: 0.58rem;
+    background-position: 99.80494% 18.75%;
+}
+
+.spr.btn-exchange.gray {
+    width: 1.67rem;
+    height: 0.68rem;
+    background-position: 83.76487% 50%;
+}
+
+.spr.btn-exchange {
+    width: 1.67rem;
+    height: 0.68rem;
+    background-position: 95.59132% 50%;
+}
+
+.spr.btn-signin {
+    width: 6.81rem;
+    height: 0.68rem;
+    background-position: 0.32787% 50%;
+}
+
+.spr.exc-input {
+    width: 5.09rem;
+    height: 0.68rem;
+    background-position: 63.10948% 50%;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    overflow: hidden;
+    background: url(../ossweb-img/m/bg.jpg) 50% 100% no-repeat;
+    background-size: cover;
+}
+
+.wrapper .main {
+    width: 6.7rem;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+.header * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 6.4rem;
+    height: .64rem;
+    border-bottom: 1px solid rgba(202, 225, 207, .15);
+    position: absolute;
+    top: .28rem;
+    left: 50%;
+    margin-left: -3.2rem;
+    z-index: 9;
+}
+
+.header:before {
+    content: '';
+    width: .05rem;
+    height: 2px;
+    background: rgba(202, 225, 207, .5);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    pointer-events: none;
+}
+
+.header:after {
+    content: '';
+    width: .05rem;
+    height: 2px;
+    background: rgba(202, 225, 207, .5);
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    pointer-events: none;
+}
+
+.header .left-box {
+    height: 100%;
+    float: left;
+    font-size: 0;
+    text-align: left;
+    width: 4.5rem;
+}
+
+.header .left-box a {
+    height: .42rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header .logo {
+    width: 1.94rem;
+    background: url(../ossweb-img/logo.png) 0 50% no-repeat;
+    background-size: 100%;
+    margin-right: .45rem;
+    position: relative;
+}
+
+.header .logo:after {
+    content: '';
+    width: 1px;
+    height: .4rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.2rem;
+    background: #fff;
+    right: -.23rem;
+    pointer-events: none;
+}
+
+.header .garena {
+    width: 1.55rem;
+    background: url(../ossweb-img/garena.png) 0 50% no-repeat;
+    background-size: 100%;
+}
+
+.header .right-box {
+    height: 100%;
+    float: right;
+    width: 1rem;
+}
+
+.header .login-box {
+    text-align: right;
+    color: #fff;
+    font-size: .24rem;
+    line-height: .51rem;
+    height: .51rem;
+    position: absolute;
+    right: 0;
+    top: .64rem;
+    width: 6.4rem;
+}
+
+.header .login-box a {
+    color: #fff;
+}
+
+.language {
+    position: relative;
+    width: 0.64rem;
+    height: 0.51rem;
+    float: right;
+    z-index: 10;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #a6a6a6;
+    transition: width .3s;
+    overflow: hidden;
+    background-color: rgba(37, 37, 37, .45);
+    border: 1px rgba(255, 255, 255, .6) solid;
+    border-radius: .05rem;
+}
+
+.language .btn-language {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.language.show {
+    overflow: visible;
+    background-color: rgba(255, 255, 255, .45);
+}
+
+.language.show .btn-language {
+    display: none;
+}
+
+.language:before {
+    content: "";
+    position: absolute;
+    width: 0.47rem;
+    height: 0.48rem;
+    top: 50%;
+    margin-top: -.24rem;
+    left: 0.075rem;
+    background: url(../ossweb-img/language-b.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.language p {
+    display: none;
+}
+
+.language ul {
+    position: absolute;
+    width: 2rem;
+    height: auto;
+    top: .51rem;
+    right: 0;
+    box-sizing: border-box;
+    max-height: 0;
+    overflow: hidden;
+    border: 1px solid #7a7773;
+}
+
+.language.show ul {
+    max-height: 9.99rem;
+    transition: max-height .6s;
+}
+
+.language li {
+    line-height: 0.4rem;
+    border-top: 1px #7a7773 solid;
+    background-color: rgba(16, 16, 16, .9);
+    box-sizing: border-box
+}
+
+.language li:nth-of-type(1) {
+    border-top: none;
+}
+
+.language li.on {
+    color: #0ff796;
+    background-color: rgba(127, 135, 135, .98);
+}
+
+.main-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 5.04rem;
+    bottom: 0;
+    z-index: 3;
+}
+
+.main-box .slogan {
+    width: 7.11rem;
+    height: 2.36rem;
+    background: url(../ossweb-img/slogan.png) 50% 50% no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+html.en .main-box .slogan {
+    background: url(../ossweb-img/m/en.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.fr .main-box .slogan {
+    background: url(../ossweb-img/m/fr.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.es .main-box .slogan {
+    background: url(../ossweb-img/m/es.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ru .main-box .slogan {
+    background: url(../ossweb-img/m/ru.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.de .main-box .slogan {
+    background: url(../ossweb-img/m/de.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ar .main-box .slogan {
+    background: url(../ossweb-img/m/ar.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.zh-tw .main-box .slogan {
+    background: url(../ossweb-img/m/zh-tw.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.th .main-box .slogan {
+    background: url(../ossweb-img/m/th.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.vi .main-box .slogan {
+    background: url(../ossweb-img/m/vi.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.id .main-box .slogan {
+    background: url(../ossweb-img/m/id.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.pt .main-box .slogan {
+    background: url(../ossweb-img/m/pt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ko .main-box .slogan {
+    background: url(../ossweb-img/m/ko.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ja .main-box .slogan {
+    background: url(../ossweb-img/m/ja.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.tr .main-box .slogan {
+    background: url(../ossweb-img/m/tr.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ms .main-box .slogan {
+    background: url(../ossweb-img/m/ms.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.main-box .tips {
+    font-size: .2rem;
+    text-align: center;
+    color: #fff;
+    width: 6.81rem;
+    margin: 0 auto;
+    line-height: .3rem;
+    height: .72rem;
+}
+
+.main-box .state {
+    display: none;
+    margin: .5rem auto 0;
+}
+
+.main-box .state.show {
+    display: block;
+}
+
+.main-box .btn-signin {
+    display: block;
+    margin: 0 auto;
+    font-size: .2163rem;
+    color: #000;
+    text-align: center;
+    line-height: .68rem;
+}
+
+.main-box .state-after {
+    width: 6.81rem;
+    position: relative;
+    text-align: center;
+}
+
+.main-box .state-after .exc-input {
+    display: block;
+    color: #808080;
+    font-size: .2rem;
+    line-height: .68rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0 .2rem;
+}
+
+.main-box .state-after .btn-exchange {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    font-size: .2rem;
+    line-height: .68rem;
+}
+
+/* .main-box .state-after .btn-exchange.gray{pointer-events: none;} */
+
+.super-tips {
+    position: fixed;
+    left: 50%;
+    margin-left: -2.665rem;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 5.33rem;
+    border: 1px solid #46494b;
+    background: url(../ossweb-img/m/super-tips.jpg) 50% 50% repeat-y;
+    background-size: 5.33rem .96rem;
+    color: #fff;
+    font-size: .2rem;
+    line-height: .36rem;
+    text-align: center;
+    z-index: 10001;
+    transition: .4s ease top, .2s ease opacity;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    box-sizing: border-box;
+}
+
+.super-tips.show {
+    top: 50%;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.super-tips.hide {
+    top: 60%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.dia {
+    display: none;
+    outline: none;
+}
+
+.dia * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dia .btn-close {
+    position: absolute;
+    width: .78rem;
+    height: .78rem;
+    border: 1px solid #868686;
+    right: 0;
+    top: -.88rem;
+}
+
+.dia .btn-close i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -.26rem;
+    margin-top: -.26rem;
+}
+
+.dia-tips {
+    width: 6.58rem;
+    height: 2.66rem;
+    background: url(../ossweb-img/m/dia-bg1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.dia-tips p {
+    font-size: .26rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: .36rem;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#afooter {
+    text-align: center;
+    color: #b9baba;
+    padding: .2rem 0 .2rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: .2rem;
+    font-size: .24rem;
+    z-index: 4
+}
+
+#afooter a {
+    color: #b9baba
+}
+
+.wrapper #ot-sdk-btn.optanon-show-settings,
+.wrapper #ot-sdk-btn.ot-sdk-show-settings {
+    color: #b9baba !important;
+    border: none !important;
+    font-size: .24rem;
+    padding: 0 !important;
+    line-height: inherit !important
+}
+
+.ar body,
+html.ar {
+    direction: rtl;
+    unicode-bidi: bidi-override
+}
+
+html.ar .main-box .state-after .exc-input {
+    float: left;
+}
+
+.logined {
+    font-size: 0;
+}
+
+.logined span,
+.logined a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: .24rem;
+    line-height: .51rem;
+    height: .51rem;
+}
+
+.logined .username {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 3rem;
+}
