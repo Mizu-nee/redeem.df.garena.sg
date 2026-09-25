@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi" class="vi">
+
+<head>
+    <script>
+        const chineseNavigatorLangMap = {
+            "zh-cn": "zh-tw",
+            "zh-tw": "zh-tw",
+            "zh-hk": "zh-tw"
+        };
+
+        function getNavigatorLang() {
+            let t = window.navigator.language,
+                a = t.substring(0, 2);
+            return "zh" === a && (a = chineseNavigatorLangMap[t.toLowerCase()] || a), a
+        }
+        const CMS_LANGUAGE_CONFIG = ["en", "de", "fr", "es", "pt", "ar", "tr", "ru", "ja", "ko", "id", "ms", "vi", "th", "zh-tw"];
+        let pathLang = location.pathname.split("/")[1] ? .toLowerCase();
+
+        function getUrlParam(t) {
+            const a = window.location.search.substring(1).split("&");
+            for (const e of a) {
+                const [a, n] = e.split("=");
+                if (decodeURIComponent(a) === t) return decodeURIComponent(n || "")
+            }
+            return null
+        }
+        if (pathLang && CMS_LANGUAGE_CONFIG.indexOf(pathLang) > -1) localStorage.setItem("lang", pathLang);
+        else {
+            let t = {
+                "zh-Hant": "zh-tw"
+            }[getUrlParam("laugue")] || getUrlParam("laugue"); - 1 === CMS_LANGUAGE_CONFIG.indexOf(t) && (t = (localStorage.getItem("lang") || getNavigatorLang() || "en").toLowerCase(), t = CMS_LANGUAGE_CONFIG.indexOf(t) > -1 ? t : "en"), localStorage.setItem("lang", t), location.replace(`/${t}${location.pathname}${location.search}${location.hash}`)
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn-apac.onetrust.com/consent/c88649b2-d69c-4e4d-b0a5-7ebbf5fb66fd/OtAutoBlock.js"></script>
+    <script src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="c88649b2-d69c-4e4d-b0a5-7ebbf5fb66fd"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() {}
+    </script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HPZY32689B"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-JEQ8YKGGHG")
+    </script>
+    <meta charset="utf-8">
+    <meta itemprop="image" content="/ossweb-img/share-icon.png">
+    <meta name="keywords" data-content="keywords" content="Lực lượng Delta, lính đặc chủng Delta, Delta Force, Diều hâu gãy cánh, game mobile Delta, e-sports Delta, FPS, trang web chính thức Delta, e-sports, e-sports hợp tác, SOL, đa nền tảng">
+    <meta name="Description" data-content="description" content="Delta Force là tựa game bắn súng chiến thuật góc nhìn thứ nhất tuyệt đỉnh và miễn phí. Tựa game này đang có các phiên bản trên PC, máy chơi game, và điện thoại di động.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" data-content="title" content="Trung Tâm Đổi Quà">
+    <meta property="og:title" data-content="title" content="Trung Tâm Đổi Quà">
+    <meta property="og:description" data-content="description" content="Delta Force là tựa game bắn súng chiến thuật góc nhìn thứ nhất tuyệt đỉnh và miễn phí. Tựa game này đang có các phiên bản trên PC, máy chơi game, và điện thoại di động.">
+    <meta property="og:url" data-content="shareUrl" content="https://www.playdeltaforce.com/vi/cdkgarena.html">
+    <meta property="og:image" data-content="shareImg" content="https://www.playdeltaforce.com/ossweb-img/main_share_icon.v2.png">
+    <meta property="twitter:site" data-content="title" content="Trung Tâm Đổi Quà">
+    <meta property="twitter:title" data-content="title" content="Trung Tâm Đổi Quà">
+    <meta property="twitter:description" data-content="description" content="Delta Force là tựa game bắn súng chiến thuật góc nhìn thứ nhất tuyệt đỉnh và miễn phí. Tựa game này đang có các phiên bản trên PC, máy chơi game, và điện thoại di động.">
+    <meta property="twitter:url" data-content="shareUrl" content="https://www.playdeltaforce.com/vi/cdkgarena.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" data-content="shareImg" content="https://www.playdeltaforce.com/ossweb-img/main_share_icon.v2.png">
+    <title data-key="title">Trung Tâm Đổi Quà</title>
+    <link rel="stylesheet" href="/cdkgarena/css/index.css" media="screen and (min-device-width:1025px)">
+    <link rel="stylesheet" href="/cdkgarena/css/index-m.css" media="screen and (max-device-width:1024px)">
+    <script>
+        ! function(e, n, t) {
+            if (/(iPhone|iPad|iPod|iOS|Android|Windows Phone|BlackBerry|SymbianOS)/i.test(navigator.userAgent)) {
+                var a = document.getElementsByTagName("head")[0];
+                a.insertAdjacentHTML("beforeEnd", '<meta name="apple-mobile-web-app-capable" content="yes">'), a.insertAdjacentHTML("beforeEnd", '<meta name="apple-mobile-web-app-status-bar-style" content="black">'), a.insertAdjacentHTML("beforeEnd", '<meta name="format-detection" content="telephone=no">'), a.insertAdjacentHTML("beforeEnd", '<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />')
+            }
+        }(window, document)
+    </script>
+    <script type="module" crossorigin="" src="/assets/cdkgarena.html.0ac41044.js"></script>
+    <script src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js"></script>
+    <script>
+        window.aegis = new Aegis({
+            id: "6o2jvIld5k69eG8Jx9",
+            reportApiSpeed: !0,
+            reportAssetSpeed: !0,
+            spa: !0,
+            hostUrl: "https://rumt-sg.com",
+            beforeReport: function(e) {
+                if ("4" === e.level && e.msg) {
+                    if (-1 !== e.msg.indexOf("Script error. @ (:0:0)")) return !1;
+                    if (-1 !== e.msg.indexOf("is not defined")) return !1
+                }
+                return e
+            }
+        })
+    </script>
+    <script src="https://sg-gpts.playerinfinite.com/comm/assets/lib/cmssdk.min.js"></script>
+    <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+</head>
+
+<body>
+    <script>
+        function support_format_webp() {
+            var t = document.createElement("canvas");
+            return !(!t.getContext || !t.getContext("2d")) && 0 == t.toDataURL("image/webp").indexOf("data:image/webp")
+        }
+        support_format_webp() ? document.body.classList.add("is-webp") : document.body.classList.add("no-webp")
+    </script>
+    <div class="wrapper">
+        <div class="header page-scale">
+            <div class="left-box"><a class="logo" href="https://deltaforce.garena.com/" target="_blank" data-footlink="footLink3"></a> <a class="garena" href="https://deltaforce.garena.com/" data-footlink="footLink3" target="_blank"></a></div>
+            <div class="right-box">
+                <div class="language"><a href="javascript:void(0);" class="btn-language"></a>
+                    <p></p>
+                    <ul></ul>
+                </div>
+                <div class="login-box">
+                    <div id="unlogin" style="display:block"><a href="javascript:void(0)" id="btn-login" data-lang="lang11">Đăng Nhập</a></div>
+                    <div id="logined" style="display:none" class="logined"><span class="username"></span><span>&nbsp;</span><a id="btn-logout" href="javascript:void(0)" data-lang="lang9">Đăng xuất</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-box">
+            <p class="slogan"></p>
+            <div class="state state-before"><a href="javascript:void(0);" class="spr btn-signin" data-lang="lang8">Đăng nhập và Đổi thưởng ngay</a></div>
+            <div class="state state-after"><input class="spr exc-input" type="text"> <a href="javascript:void(0);" class="spr btn-exchange" data-lang="lang10">Đổi</a></div>
+        </div>
+        <div id="afooter" class="afooter">
+            <div id="footer_ieg">
+                <div class="wrap_ieg">
+                    <p class="foot_link"><a href="https://www.playdeltaforce.com/en/terms-of-use.html" data-footlink="footLink1" target="_blank" data-lang="lang178">Điều khoản dịch vụ</a> &nbsp;|&nbsp; <a href="https://www.playdeltaforce.com/en/privacy-policy.html" data-footlink="footLink2"
+                            target="_blank" data-lang="lang179">Thỏa thuận bảo mật</a> &nbsp;|&nbsp; <a href="https://www.playdeltaforce.com/en/cookie-policy.html" target="_blank" data-lang="lang180" id="footCookie">Thỏa thuận Cookie</a> &nbsp;|&nbsp;
+                        <a
+                            href="https://web.df.garena.com/02_h5/footer/license.html" target="_blank" data-lang="lang181">License Information</a> &nbsp;|&nbsp; <a href="javascript:;" id="ot-sdk-btn" class="ot-sdk-show-settings"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="super-tips" id="superTips"></p>
+    <div class="dia dia-tips" id="diaTips"><a href="javascript:void(0);" class="btn-close"><i class="spr btn-close-i"></i></a>
+        <p>Sorry, you have not gained access to the test yet. Stay tuned to our community updates for upcoming giveaways.</p>
+    </div>
+    <script src="/cdkgarena/js/jquery-1.9.1.min.js"></script>
+    <script src="/cdkgarena/js/dialog.js"></script>
+    <script src="/cdkgarena/js/glanguage.js"></script>
+    <script src="/cdkgarena/js/glang-tips.js"></script>
+    <script src="/cdkgarena/js/comm.js"></script>
+    <script nomodule="">
+        ! function() {
+            var e = document,
+                t = e.createElement("script");
+            if (!("noModule" in t) && "onbeforeload" in t) {
+                var n = !1;
+                e.addEventListener("beforeload", (function(e) {
+                    if (e.target === t) n = !0;
+                    else if (!e.target.hasAttribute("nomodule") || !n) return;
+                    e.preventDefault()
+                }), !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove()
+            }
+        }();
+    </script>
+    <script nomodule="" crossorigin="" id="vite-legacy-polyfill" src="/assets/polyfills-legacy.f690fb9e.js"></script>
+    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="/assets/cdkgarena.html-legacy.4c217abc.js">
+        System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+    </script>
+</body>
+
+</html>

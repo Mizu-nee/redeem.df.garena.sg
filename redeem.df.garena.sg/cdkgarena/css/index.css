@@ -1,0 +1,645 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+header,
+section,
+article,
+footer {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em,
+b {
+    font-style: normal
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+img {
+    border: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background: #29373d;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th,
+ul,
+ol {
+    padding: 0;
+    border: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    font-size: calc(100vw / 3840 * 100);
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAbCAMAAACkwzTUAAAA1VBMVEUAAAAwMTEhISEVFhUDAwNwcnGAgIBHSEgwMTFMTUw+Pj4jIyMwMTEODg76+vrQ1NL8/PzLzs7v7+/s7OzDxsbi4uKvs7LW1tbNzc2+vr7Q0NCanJyurq6VmJe4uLigoKCRkpGPj497e3tycnJ4eHh6enpycnJaWlpqampeXl5LS0tRUVElJiZaWlouLi5ZWlo6OjoODg7////j6Ofe4uHR1dT8/f3P09Lb397T19bt8O/i5uXr7e38/v3v8/Lo6+vh5eTZ3dzN0tHx9fTe5OLW2tnL0M+D8sNVAAAAMnRSTlMAYTUgBoh4bGZcQScjDPz59fHw6OXc1dLJurm0sK+uqaaRhnh1cGhhXlVPTDw3MTAaFvaYlCwAAAC9SURBVCjPjdLHFoIwFEXRCNjF3nvv9SmhF7H8/ycJiGhWMvAM97qj5CF2uR1LkzBlaMqEwYnSmA7QyFB6tzEUJ9RWMQCgy5N6VhTscW1N6kXWwAuPBUJdb+zXyhJbbxxUSf+oJF8xvBuJX5VkA8KaXKSqG42hvIjUH0f1s6GqT/1jeQztY7h1CsNEYjZfrjYZjtuLgUqKFUdEvj5uPYFWq84jSu3Sln51zUkjSjUzzvg36Ai0Jqs86x4O6N9eLWcmZUhBy7sAAAAASUVORK5CYII=), auto
+}
+
+.wrapper * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    background: url(../ossweb-img/bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.wrapper img {
+    display: block;
+}
+
+.spr {
+    background-image: url(../ossweb-img/spr.png);
+    background-repeat: no-repeat;
+    background-size: 9.38rem 2.83rem;
+}
+
+.spr.btn-close-i {
+    width: 0.62rem;
+    height: 0.63rem;
+    background-position: 0.34247% 86.36364%;
+}
+
+.spr.btn-exchange.gray {
+    width: 2.43rem;
+    height: 0.91rem;
+    background-position: 98.70504% 50%;
+}
+
+.spr.btn-exchange {
+    width: 2.43rem;
+    height: 0.91rem;
+    background-position: 98.70504% 98.4375%;
+}
+
+.spr.btn-signin {
+    width: 9.32rem;
+    height: 0.91rem;
+    background-position: 50% 1.5625%;
+}
+
+.spr.exc-input {
+    width: 6.81rem;
+    height: 0.92rem;
+    background-position: 1.16732% 50.26178%;
+}
+
+/* header */
+
+.header {
+    width: 34.9rem;
+    height: 0.94rem;
+    border-bottom: 2px solid rgba(202, 225, 207, .15);
+    position: absolute;
+    top: 0.74rem;
+    left: 50%;
+    margin-left: -17.45rem;
+    z-index: 9;
+}
+
+.header:before {
+    content: '';
+    width: 0.05rem;
+    height: 0.02rem;
+    background: rgba(202, 225, 207, .5);
+    position: absolute;
+    bottom: -0.02rem;
+    left: 0;
+    pointer-events: none;
+}
+
+.header:after {
+    content: '';
+    width: 0.05rem;
+    height: 0.02rem;
+    background: rgba(202, 225, 207, .5);
+    position: absolute;
+    bottom: -0.02rem;
+    right: 0;
+    pointer-events: none;
+}
+
+.header .left-box {
+    float: left;
+    width: 8rem;
+}
+
+.header .right-box {
+    float: right;
+    width: 12.5rem;
+}
+
+.header .login-box {
+    text-align: right;
+    color: #fff;
+    font-size: .24rem;
+    line-height: .74rem;
+    height: .74rem;
+    float: right;
+    margin-right: .2rem;
+}
+
+.header .login-box a {
+    color: #fff;
+}
+
+.header .login-box a:hover {
+    color: #0ff796;
+}
+
+.header .logo {
+    width: 3.33rem;
+    height: 0.72rem;
+    background: url(../ossweb-img/logo.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: .43rem;
+    position: relative;
+}
+
+.header .logo:after {
+    content: '';
+    width: 1px;
+    height: .7rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -.35rem;
+    background: #fff;
+    right: -.22rem;
+    pointer-events: none;
+}
+
+.header .garena {
+    width: 2.65rem;
+    height: 0.72rem;
+    background: url(../ossweb-img/garena.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.language {
+    position: relative;
+    width: 0.93rem;
+    height: 0.74rem;
+    float: right;
+    z-index: 10;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #a6a6a6;
+    transition: width .5s;
+    cursor: pointer;
+    background-color: rgba(37, 37, 37, .45);
+    border: 1px rgba(255, 255, 255, .6) solid;
+    border-radius: .05rem;
+}
+
+.language .btn-language {
+    display: none;
+}
+
+.language:hover {
+    overflow: visible;
+    width: 3.4rem;
+    background-color: rgba(255, 255, 255, .45);
+}
+
+.language:before {
+    content: "";
+    position: absolute;
+    width: 0.69rem;
+    height: 0.71rem;
+    top: 50%;
+    margin-top: -.355rem;
+    left: 0.11rem;
+    background: url(../ossweb-img/language-b.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.language:after {
+    content: "";
+    position: absolute;
+    width: 0.31rem;
+    height: 0.22rem;
+    top: 50%;
+    margin-top: -.11rem;
+    right: 0.2rem;
+    opacity: 0;
+    background: url(../ossweb-img/language-a.png);
+    background-size: 100% 100%;
+}
+
+.language p {
+    height: 0.74rem;
+    line-height: 0.72rem;
+    font-size: 0.24rem;
+    color: #0ff796;
+    opacity: 0;
+    padding: 0 0.58rem 0 .78rem;
+}
+
+.language:hover p {
+    animation: an_opacity2 .5s linear forwards
+}
+
+.language:hover:after {
+    animation: an_opacity2 .5s linear forwards
+}
+
+.language ul {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-top: 0.74rem;
+    max-height: 0;
+    overflow: hidden
+}
+
+.language:hover ul {
+    max-height: 9.99rem;
+    transition: max-height 1s;
+}
+
+.language li {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-left: 1px #7a7773 solid;
+    border-right: 1px #7a7773 solid;
+    border-bottom: 1px #7a7773 solid;
+    background-color: rgba(16, 16, 16, .9);
+    box-sizing: border-box
+}
+
+.language li.on,
+.language li:hover {
+    color: #0ff796;
+    background-color: rgba(127, 135, 135, .98);
+}
+
+@keyframes an_opacity2 {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-box {
+    width: 20rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -10rem;
+    top: 50%;
+    margin-top: 1.27rem;
+    z-index: 3;
+}
+
+.main-box .slogan {
+    width: 16.44rem;
+    height: 3.81rem;
+    background: url(../ossweb-img/slogan.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+html.en .main-box .slogan {
+    background: url(../ossweb-img/en.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.fr .main-box .slogan {
+    background: url(../ossweb-img/fr.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.es .main-box .slogan {
+    background: url(../ossweb-img/es.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ru .main-box .slogan {
+    background: url(../ossweb-img/ru.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.de .main-box .slogan {
+    background: url(../ossweb-img/de.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ar .main-box .slogan {
+    background: url(../ossweb-img/ar.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.zh-tw .main-box .slogan {
+    background: url(../ossweb-img/zh-tw.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.th .main-box .slogan {
+    background: url(../ossweb-img/th.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.vi .main-box .slogan {
+    background: url(../ossweb-img/vi.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.id .main-box .slogan {
+    background: url(../ossweb-img/id.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.pt .main-box .slogan {
+    background: url(../ossweb-img/pt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ko .main-box .slogan {
+    background: url(../ossweb-img/ko.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ja .main-box .slogan {
+    background: url(../ossweb-img/ja.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.tr .main-box .slogan {
+    background: url(../ossweb-img/tr.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+html.ms .main-box .slogan {
+    background: url(../ossweb-img/ms.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.main-box .tips {
+    font-size: .27rem;
+    text-align: center;
+    color: #fff;
+    width: 14.61rem;
+    margin: 0 auto;
+    line-height: .4rem;
+    height: 1.04rem;
+}
+
+.main-box .state {
+    display: none;
+    margin: .5rem auto 0;
+}
+
+.main-box .state a {
+    -webkit-transition: -webkit-filter .3s ease-out;
+    transition: filter .3s ease-out
+}
+
+.main-box .state a:hover {
+    -webkit-filter: brightness(1.05);
+    filter: brightness(1.05);
+}
+
+.main-box .state.show {
+    display: block;
+}
+
+.main-box .btn-signin {
+    display: block;
+    margin: 0 auto;
+    font-size: .29rem;
+    color: #000;
+    text-align: center;
+    line-height: .91rem;
+}
+
+.main-box .state-after {
+    width: 9.32rem;
+    position: relative;
+    text-align: center;
+}
+
+.main-box .state-after .exc-input {
+    display: block;
+    color: #808080;
+    font-size: .3rem;
+    line-height: .92rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0 .2rem;
+}
+
+.main-box .state-after .btn-exchange {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000000;
+    font-size: .3rem;
+    line-height: .91rem;
+}
+
+/* .main-box .state-after .btn-exchange.gray{pointer-events: none;} */
+
+.super-tips {
+    position: fixed;
+    left: 50%;
+    margin-left: -4.61rem;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 9.22rem;
+    border: 1px solid #46494b;
+    background: url(../ossweb-img/super-tips.jpg) 50% 50% repeat-y;
+    background-size: 9.22rem 1.26rem;
+    color: #fff;
+    font-size: .28rem;
+    line-height: .4rem;
+    text-align: center;
+    z-index: 10001;
+    transition: .4s ease top, .2s ease opacity;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem;
+    box-sizing: border-box;
+}
+
+.super-tips.show {
+    top: 50%;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.super-tips.hide {
+    top: 60%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.dia {
+    display: none;
+    outline: none;
+}
+
+.dia * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dia .btn-close {
+    position: absolute;
+    width: .91rem;
+    height: .91rem;
+    border: 1px solid #868686;
+    right: 0;
+    top: -1rem;
+}
+
+.dia .btn-close i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -.3rem;
+    margin-top: -.3rem;
+    transition: .3s ease-out transform;
+}
+
+.dia .btn-close i:hover {
+    transform: rotate(90deg);
+}
+
+.dia-tips {
+    width: 11.3rem;
+    height: 4.14rem;
+    background: url(../ossweb-img/dia-bg1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.dia-tips p {
+    font-size: .3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: .4rem;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#afooter {
+    text-align: center;
+    color: #b9baba;
+    padding: .2rem 0 .2rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: .4rem
+}
+
+#afooter a {
+    color: #b9baba
+}
+
+#ot-sdk-btn.optanon-show-settings,
+#ot-sdk-btn.ot-sdk-show-settings {
+    color: #b9baba !important;
+    border: none !important;
+    font: inherit !important;
+    padding: 0 !important;
+    line-height: inherit !important
+}
+
+#ot-sdk-btn.optanon-show-settings:hover,
+#ot-sdk-btn.ot-sdk-show-settings:hover {
+    color: #b9baba !important;
+    background: 0 0 !important
+}
+
+body {
+    font-size: 14px;
+    line-height: 28px;
+    color: #121212
+}
+
+.ar body,
+html.ar {
+    direction: rtl;
+    unicode-bidi: bidi-override
+}
+
+html.ar .main-box .state-after .exc-input {
+    float: left;
+}
+
+html.ar .header .left-box {
+    direction: ltr;
+}
